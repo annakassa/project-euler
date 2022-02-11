@@ -4,10 +4,10 @@ The sum of these multiples is 23.
 Find the sum of all the multiples of 3 or 5 below 1000. */
 
 //create a variable that defines the range we are using for sum
-var multiples = function (n) {
+var multThreeOrFive = function (n) {
     //starts the sum with no previous values
         var sum = 0;
-    //starts the variable in 0
+    //starts counting
         for (var i = 0; i < n; i++) {
     //if the division by 3 or 5 remainds in 0, the function will add the value to the sum
             if ((i % 3 == 0) || (i % 5 == 0)) {
@@ -18,4 +18,4 @@ var multiples = function (n) {
     };
     
     
-    multiples(1000);
+    multThreeOrFive(1000);
